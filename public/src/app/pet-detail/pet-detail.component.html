@@ -1,0 +1,12 @@
+
+<div class="container">
+    <button class="btn btn-link float-right" [routerLink]="['']">Home</button>
+    <h3>Details about {{thisPet.name}}</h3>
+    <h5>Pet Type: {{thisPet.petType}}</h5>
+    <h5>Description: {{thisPet.description}}</h5>
+    <h5>Skills: {{thisPet.skillOne}},
+        {{thisPet.skillTwo}}<br>
+        {{thisPet.skillThree}}</h5>
+    <h5>Likes: {{thisPet.Likes}}</h5>
+    <button [disabled]='clicked' (click)="likePet(thisPet)">Like this pet</button><button (click)="deletePet(thisPet)" >Adopt this pet</button>
+</div>
